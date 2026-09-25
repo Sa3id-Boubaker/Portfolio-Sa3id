@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" role="img" aria-labelledby="title">
+  <title id="title">Détection d'anomalies</title>
+  <defs>
+    <radialGradient id="dot" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#6fc6ff"/>
+      <stop offset="100%" stop-color="#0563bb"/>
+    </radialGradient>
+    <radialGradient id="anomalyDot" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ff9a8c"/>
+      <stop offset="100%" stop-color="#ff4d4d"/>
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(114,95)">
+    <!-- magnifier -->
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#0563bb" stroke-width="7"/>
+    <line x1="37" y1="37" x2="70" y2="70" stroke="#0563bb" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- clustered normal points -->
+    <circle cx="-18" cy="-10" r="5.5" fill="url(#dot)"/>
+    <circle cx="-2" cy="-20" r="4.5" fill="url(#dot)"/>
+    <circle cx="10" cy="-4" r="6" fill="url(#dot)"/>
+    <circle cx="-8" cy="12" r="4.8" fill="url(#dot)"/>
+    <circle cx="8" cy="18" r="4" fill="url(#dot)"/>
+    <circle cx="-22" cy="8" r="3.6" fill="url(#dot)"/>
+
+    <!-- isolated anomaly point -->
+    <circle cx="34" cy="-30" r="18" fill="none" stroke="#ff5c5c" stroke-opacity="0.45" stroke-width="1.6" stroke-dasharray="3 4"/>
+    <circle cx="34" cy="-30" r="6.5" fill="url(#anomalyDot)"/>
+  </g>
+
+  <text x="200" y="215" text-anchor="middle" font-family="'Poppins', 'Raleway', sans-serif" font-size="30" font-weight="600" fill="#2c3e50">Anomaly<tspan fill="#0563bb"> Detection</tspan></text>
+</svg>

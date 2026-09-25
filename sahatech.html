@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>SahaTeck - Application web et desktop</title>
+  <meta content="Présentation du projet académique SahaTeck : application web et desktop pour le suivi médical, développée à ESPRIT." name="description">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><button class="lang-toggle" type="button" aria-label="Switch to English" title="Switch to English">EN</button></li>
+        <li><button class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Mode sombre"><i class="bi bi-moon-stars"></i></button></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span data-i18n="nav.home2">Accueil</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span data-i18n="nav.profile">Profil</span></a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i><span data-i18n="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs"><ol><li><a href="index.html" data-i18n="nav.home2">Accueil</a></li><li class="current">SahaTeck</li></ol></nav>
+        <h1>SahaTeck</h1>
+        <p data-i18n="sahatech.tagline">Application web et desktop | Symfony · JavaFX · MySQL</p>
+      </div>
+    </div>
+
+    <section class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-description project-detail-content">
+              <p data-i18n-html="sahatech.intro"><strong>SahaTeck</strong> est une application web et desktop développée avec Symfony et JavaFX dans le cadre du cursus académique à l'ESPRIT, pour le suivi médical, les rendez-vous et les échanges entre patients et médecins.</p>
+
+              <h3 data-i18n="detail.objective">Objectif du projet</h3>
+              <p data-i18n="sahatech.objective">Offrir une solution complète pour le domaine de la santé, accessible en web comme en desktop et connectée via une API REST, couvrant l'authentification, le suivi des patients et des médecins, les rendez-vous et les événements.</p>
+
+              <h3 data-i18n="detail.contribution">Ma contribution</h3>
+              <p data-i18n="sahatech.contribution.intro">Projet réalisé en équipe à l'ESPRIT, où mon rôle s'est concentré sur le module de gestion des utilisateurs.</p>
+              <ul>
+                <li data-i18n="sahatech.contribution.item1">Inscription et connexion sécurisées, avec connexion Google/OAuth2.</li>
+                <li data-i18n="sahatech.contribution.item2">Gestion des profils et des rôles (patients, médecins, admin).</li>
+                <li data-i18n="sahatech.contribution.item3">Réinitialisation de mot de passe et vérification de compte.</li>
+              </ul>
+
+              <h3 data-i18n="detail.technologies">Technologies</h3>
+              <div class="project-tags" aria-label="Technologies utilisées">
+                <span class="tech-icon" title="Java" aria-label="Java"><img class="tech-image" src="assets/img/tech-icons/java-cup.png" alt=""></span>
+                <span class="tech-icon" title="JavaFX Scene Builder" aria-label="JavaFX Scene Builder"><img class="tech-image" src="assets/img/tech-icons/scenebuilder.png" alt=""></span>
+                <span class="tech-icon" title="Symfony" aria-label="Symfony"><i class="devicon-symfony-original colored"></i></span>
+                <span class="tech-icon" title="MySQL" aria-label="MySQL"><i class="devicon-mysql-plain colored"></i></span>
+                <span class="tech-icon" title="Git" aria-label="Git"><i class="devicon-git-plain colored"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info project-summary">
+              <h3 data-i18n="detail.projectInfo">Informations du projet</h3>
+              <ul>
+                <li><strong data-i18n="detail.category">Catégorie</strong> <span data-i18n="sahatech.info.category">Application web &amp; desktop, santé</span></li>
+                <li><strong data-i18n="detail.context">Contexte</strong> <span data-i18n="detail.academicProject">Projet académique</span></li>
+                <li><strong data-i18n="sahatech.info.institutionLabel">Établissement</strong> ESPRIT</li>
+                <li><strong data-i18n="detail.stack">Stack</strong> Symfony · JavaFX · MySQL</li>
+              </ul>
+              <div class="btn-visit-group">
+                <a class="btn-visit" href="https://github.com/nour-houda-melkii/Pi_Dev_JavaFX" target="_blank" rel="noopener"><i class="bi bi-github"></i> <span data-i18n="portfolio.codeDesktop">Code desktop</span></a>
+                <a class="btn-visit" href="https://github.com/Sa3id-Boubaker/PI_Dev_Soul_Of_cinder" target="_blank" rel="noopener"><i class="bi bi-github"></i> <span data-i18n="portfolio.codeWeb">Code web</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Mohamed Said Boubaker</h3>
+      <p>Cloud Computing | DevOps | Kubernetes</p>
+      <div class="social-links d-flex justify-content-center"><a href="https://github.com/Sa3id-Boubaker" aria-label="GitHub"><i class="bi bi-github"></i></a><a href="https://linkedin.com/in/mohamed-said-boubaker-847859229/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

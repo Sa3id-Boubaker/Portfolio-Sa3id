@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Plateforme e-learning OMARISE - Projet DevOps</title>
+  <meta content="Présentation du projet e-learning réalisé chez OMARISE." name="description">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><button class="lang-toggle" type="button" aria-label="Switch to English" title="Switch to English">EN</button></li>
+        <li><button class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Mode sombre"><i class="bi bi-moon-stars"></i></button></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span data-i18n="nav.home2">Accueil</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span data-i18n="nav.profile">Profil</span></a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i><span data-i18n="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs"><ol><li><a href="index.html" data-i18n="nav.home2">Accueil</a></li><li class="current" data-i18n="omarise.breadcrumb">Plateforme e-learning</li></ol></nav>
+        <h1>Plateforme e-learning OMARISE</h1>
+        <p data-i18n="omarise.tagline">Architecture microservices | Spring Boot · Angular · RabbitMQ · Kubernetes</p>
+      </div>
+    </div>
+
+    <section class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-description project-detail-content">
+              <p data-i18n-html="omarise.intro"><strong>Plateforme e-learning</strong> développée dans le cadre d'un stage chez OMARISE, avec une architecture microservices destinée à structurer les fonctionnalités d'une application de formation en ligne (cours, formations avec sessions live, forum, notifications).</p>
+
+              <h3 data-i18n="detail.objective">Objectif du projet</h3>
+              <p data-i18n="omarise.objective">Concevoir une plateforme e-learning modulaire, sécurisée et déployable, capable de faire communiquer plusieurs services indépendants (utilisateurs, cours, formations, forum, notifications) tout en garantissant scalabilité et observabilité.</p>
+
+              <h3 data-i18n="detail.contribution">Ma contribution</h3>
+              <ul>
+                <li data-i18n="omarise.contribution.item1">Développement de services backend avec Spring Boot et Spring Cloud (7 microservices : utilisateurs, cours, formations, forum, notifications, API Gateway, Eureka).</li>
+                <li data-i18n="omarise.contribution.item2">Mise en place de l'API Gateway et d'Eureka pour la découverte des services.</li>
+                <li data-i18n="omarise.contribution.item3">Intégration de MongoDB et d'un frontend Angular.</li>
+                <li data-i18n="omarise.contribution.item4">Ajout de l'authentification JWT et de la messagerie événementielle asynchrone avec RabbitMQ pour les notifications en temps réel.</li>
+                <li data-i18n="omarise.contribution.item5">Conteneurisation avec Docker et orchestration avec Kubernetes (Minikube).</li>
+                <li data-i18n="omarise.contribution.item6">Mise en place de pipelines CI/CD avec Jenkins (build, tests, analyse qualité SonarQube, build/push d'images, déploiement), déclenchés automatiquement à chaque push GitHub.</li>
+                <li data-i18n="omarise.contribution.item7">Monitoring des services avec Prometheus et Grafana, avec dashboards personnalisés.</li>
+              </ul>
+
+              <h3 data-i18n="detail.technologies">Technologies</h3>
+              <div class="project-tags" aria-label="Technologies utilisées">
+                <span class="tech-icon" title="Java" aria-label="Java"><img class="tech-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt=""></span>
+                <span class="tech-icon" title="Spring Boot" aria-label="Spring Boot"><i class="devicon-spring-original colored"></i></span>
+                <span class="tech-icon" title="Spring Cloud" aria-label="Spring Cloud"><img class="tech-image" src="https://spring.io/img/projects/spring-cloud.svg" alt=""></span>
+                <span class="tech-icon" title="Angular" aria-label="Angular"><i class="devicon-angularjs-plain colored"></i></span>
+                <span class="tech-icon" title="MongoDB" aria-label="MongoDB"><i class="devicon-mongodb-plain colored"></i></span>
+                <span class="tech-icon" title="RabbitMQ" aria-label="RabbitMQ"><i class="devicon-rabbitmq-original colored"></i></span>
+                <span class="tech-icon" title="Docker" aria-label="Docker"><i class="devicon-docker-plain colored"></i></span>
+                <span class="tech-icon" title="Kubernetes" aria-label="Kubernetes"><i class="devicon-kubernetes-plain colored"></i></span>
+                <span class="tech-icon" title="Jenkins" aria-label="Jenkins"><img class="tech-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jenkins/jenkins-original.svg" alt=""></span>
+                <span class="tech-icon" title="SonarQube" aria-label="SonarQube"><i class="devicon-sonarqube-plain colored"></i></span>
+                <span class="tech-icon" title="Prometheus" aria-label="Prometheus"><i class="devicon-prometheus-original colored"></i></span>
+                <span class="tech-icon" title="Grafana" aria-label="Grafana"><i class="devicon-grafana-plain colored"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info project-summary">
+              <h3 data-i18n="detail.projectInfo">Informations du projet</h3>
+              <ul>
+                <li><strong data-i18n="detail.category">Catégorie</strong> <span data-i18n="omarise.info.category">Développement, Cloud &amp; DevOps</span></li>
+                <li><strong data-i18n="detail.context">Contexte</strong> <span data-i18n="omarise.info.context">Stage d'été</span></li>
+                <li><strong data-i18n="detail.company">Entreprise</strong> OMARISE</li>
+                <li><strong data-i18n="detail.duration">Durée</strong> <span data-i18n="omarise.info.duration">Juillet - Septembre 2026</span></li>
+              </ul>
+              <a class="btn-visit" href="https://github.com/Sa3id-Boubaker/e-learning-frontend" target="_blank" rel="noopener"><i class="bi bi-github"></i> <span data-i18n="detail.viewGithub">Voir le dépôt GitHub</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-gallery project-gallery-bottom" data-aos="fade-up">
+          <div class="project-architecture">
+            <h3 data-i18n="omarise.architecture.title">Architecture microservices</h3>
+            <div class="mermaid">
+flowchart LR
+    Client[Angular frontend] --> GW[api-gateway :8080]
+    GW --> US[user-service :8081]
+    GW --> CS[course-service :8082]
+    GW --> NS[notification-service :8083]
+    GW --> TS[training-service :8084]
+    GW --> FS[forum-service :8085]
+    US &amp; CS &amp; NS &amp; TS &amp; FS --> EU[eureka-server :8761]
+    CS -. events .-&gt; MQ[(RabbitMQ<br/>omarise.events)]
+    TS -. events .-&gt; MQ
+    FS -. events .-&gt; MQ
+    MQ -. consumes .-&gt; NS
+    US &amp; CS &amp; NS &amp; TS &amp; FS --> DB[(MongoDB Atlas<br/>one DB per service)]
+            </div>
+          </div>
+          <h3 data-i18n="detail.screenshots">Captures du projet</h3>
+          <div class="project-gallery-grid">
+            <figure><img src="assets/img/projects/omarise/omarise-home.png" class="img-fluid" alt="Page d'accueil OMARISE"><figcaption data-i18n="omarise.gallery.home">Page d’accueil de la plateforme e-learning.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-admin-dashboard.png" class="img-fluid" alt="Dashboard administrateur OMARISE"><figcaption data-i18n="omarise.gallery.admin">Dashboard administrateur.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-student-dashboard.png" class="img-fluid" alt="Dashboard étudiant OMARISE"><figcaption data-i18n="omarise.gallery.student">Espace étudiant et suivi des formations.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-docker-compose.png" class="img-fluid" alt="Docker Compose OMARISE"><figcaption data-i18n="omarise.gallery.docker">Démarrage des services avec Docker Compose.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-kubernetes.png" class="img-fluid" alt="Pods Kubernetes OMARISE"><figcaption data-i18n="omarise.gallery.kubernetes">Services déployés sur Kubernetes Minikube.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-sonarqube.png" class="img-fluid" alt="Analyse SonarQube OMARISE"><figcaption data-i18n="omarise.gallery.sonarqube">Analyse qualité avec SonarQube.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-jenkins-backend.png" class="img-fluid" alt="Pipeline Jenkins backend OMARISE"><figcaption data-i18n="omarise.gallery.jenkinsBackend">Pipeline CI/CD Jenkins du backend.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-jenkins-frontend.png" class="img-fluid" alt="Pipeline Jenkins frontend OMARISE"><figcaption data-i18n="omarise.gallery.jenkinsFrontend">Pipeline CI/CD Jenkins du frontend.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-grafana-overview.png" class="img-fluid" alt="Dashboard Grafana OMARISE"><figcaption data-i18n="omarise.gallery.grafana">Disponibilité des services et utilisation de la mémoire JVM avec Grafana.</figcaption></figure>
+            <figure><img src="assets/img/projects/omarise/omarise-eureka.png" class="img-fluid" alt="Services enregistrés dans Eureka"><figcaption data-i18n="omarise.gallery.eureka">Services enregistrés et disponibles dans Eureka Server.</figcaption></figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Mohamed Said Boubaker</h3>
+      <p>Cloud Computing | DevOps | Kubernetes</p>
+      <div class="social-links d-flex justify-content-center"><a href="https://github.com/Sa3id-Boubaker" aria-label="GitHub"><i class="bi bi-github"></i></a><a href="https://linkedin.com/in/mohamed-said-boubaker-847859229/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>mermaid.initialize({ startOnLoad: true, theme: 'default', securityLevel: 'loose' });</script>
+</body>
+
+</html>

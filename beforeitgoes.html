@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>BeforeItGoes - Projet Cloud &amp; DevOps</title>
+  <meta content="Présentation du projet BeforeItGoes de Mohamed Said Boubaker." name="description">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="portfolio-details-page">
+  <header id="header" class="header d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><button class="lang-toggle" type="button" aria-label="Switch to English" title="Switch to English">EN</button></li>
+        <li><button class="theme-toggle" type="button" aria-label="Activer le mode sombre" title="Mode sombre"><i class="bi bi-moon-stars"></i></button></li>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i><span data-i18n="nav.home2">Accueil</span></a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i><span data-i18n="nav.profile">Profil</span></a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-images navicon"></i><span data-i18n="nav.portfolio">Portfolio</span></a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i><span data-i18n="nav.contact">Contact</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <div class="page-title" data-aos="fade">
+      <div class="container">
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html" data-i18n="nav.home2">Accueil</a></li>
+            <li class="current">BeforeItGoes</li>
+          </ol>
+        </nav>
+        <h1 data-i18n="beforeitgoes.h1">BeforeItGoes - Plateforme SaaS Anti-Gaspillage Alimentaire</h1>
+        <p data-i18n="beforeitgoes.tagline">Déployée sur Cloud Privé OpenStack | Spring Boot · Angular · IA · Docker · Kubernetes</p>
+      </div>
+    </div>
+
+    <section class="portfolio-details section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-description project-detail-content">
+              <p data-i18n-html="beforeitgoes.intro"><strong>BeforeItGoes</strong> est une plateforme marketplace intelligente développée dans un contexte académique, mettant en relation des vendors (restaurants, boulangeries, supermarchés) avec des clients pour vendre les invendus alimentaires à prix réduit, réduisant ainsi le gaspillage alimentaire tout en proposant une infrastructure Cloud conteneurisée, orchestrée et observable.</p>
+
+              <h3 data-i18n="detail.objective">Objectif du projet</h3>
+              <p data-i18n="beforeitgoes.objective">Centraliser la gestion des surplus alimentaires et proposer une solution moderne, scalable et monitorée sur un environnement Cloud privé, en combinant une logique métier avancée côté applicatif et une infrastructure DevOps complète côté déploiement.</p>
+
+              <h3 data-i18n="detail.contribution">Ma contribution</h3>
+              <p data-i18n="beforeitgoes.contribution.intro">Projet réalisé en équipe à l'ESPRIT, où mon rôle s'est concentré sur le développement du module de gestion du marketplace alimentaire — couvrant l'ensemble du cycle de vie des offres, la validation intelligente par IA, le scoring automatique des vendors, ainsi que le déploiement de l'infrastructure sur cloud privé.</p>
+
+              <h4 data-i18n="beforeitgoes.app.title">Côté applicatif (Backend &amp; Frontend)</h4>
+              <ul>
+                <li data-i18n="beforeitgoes.app.item1">Conception et implémentation de l’API REST complète.</li>
+                <li data-i18n="beforeitgoes.app.item2">Pipeline de validation IA des images d'offres alimentaires via ResNet50 (Transfer Learning) et de la cohérence image/description via CLIP (Fine-Tuning) — exposé via FastAPI.</li>
+                <li data-i18n="beforeitgoes.app.item3">Système automatique de badge et scoring vendors (Spring Scheduler).</li>
+                <li data-i18n="beforeitgoes.app.item4">Dashboard analytics admin avec ApexCharts.</li>
+                <li data-i18n="beforeitgoes.app.item5">Workflows n8n pour l’automatisation du cycle de vie des offres.</li>
+                <li data-i18n="beforeitgoes.app.item6">Système de notifications emails (JavaMailSender).</li>
+                <li data-i18n="beforeitgoes.app.item7">Intégration Cloudinary pour la gestion des images.</li>
+                <li data-i18n="beforeitgoes.app.item8">Paiement en ligne via Stripe.</li>
+              </ul>
+
+              <h4 data-i18n="beforeitgoes.infra.title">Côté infrastructure (DevOps &amp; Cloud)</h4>
+              <ul>
+                <li data-i18n="beforeitgoes.infra.item1">Conteneurisation de tous les composants avec Docker.</li>
+                <li data-i18n="beforeitgoes.infra.item2">Déploiement et orchestration avec Kubernetes.</li>
+                <li data-i18n="beforeitgoes.infra.item3">Automatisation de l’infrastructure avec Ansible.</li>
+                <li data-i18n="beforeitgoes.infra.item4">Mise en place de l’observabilité avec Prometheus et Grafana.</li>
+                <li data-i18n="beforeitgoes.infra.item5">Déploiement sur cloud privé OpenStack.</li>
+              </ul>
+
+              <h3 data-i18n="detail.technologies">Technologies</h3>
+              <div class="project-tags" aria-label="Technologies utilisées">
+                <span class="tech-icon" title="Spring Boot" aria-label="Spring Boot"><i class="devicon-spring-original colored"></i></span>
+                <span class="tech-icon" title="Angular" aria-label="Angular"><i class="devicon-angularjs-plain colored"></i></span>
+                <span class="tech-icon" title="FastAPI" aria-label="FastAPI"><i class="devicon-fastapi-plain colored"></i></span>
+                <span class="tech-icon" title="MySQL" aria-label="MySQL"><i class="devicon-mysql-plain colored"></i></span>
+                <span class="tech-icon" title="n8n" aria-label="n8n"><img class="tech-image" src="assets/img/tech-icons/n8n.png" alt=""></span>
+                <span class="tech-icon" title="Docker" aria-label="Docker"><i class="devicon-docker-plain colored"></i></span>
+                <span class="tech-icon" title="Kubernetes" aria-label="Kubernetes"><i class="devicon-kubernetes-plain colored"></i></span>
+                <span class="tech-icon" title="OpenStack" aria-label="OpenStack"><i class="devicon-openstack-plain colored"></i></span>
+                <span class="tech-icon" title="Ansible" aria-label="Ansible"><i class="devicon-ansible-plain colored"></i></span>
+                <span class="tech-icon" title="Prometheus" aria-label="Prometheus"><i class="devicon-prometheus-original colored"></i></span>
+                <span class="tech-icon" title="Grafana" aria-label="Grafana"><i class="devicon-grafana-plain colored"></i></span>
+                <span class="tech-icon" title="GitHub" aria-label="GitHub"><i class="devicon-github-original colored"></i></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info project-summary">
+              <h3 data-i18n="detail.projectInfo">Informations du projet</h3>
+              <ul>
+                <li><strong data-i18n="detail.category">Catégorie</strong> <span data-i18n="beforeitgoes.info.category">Cloud, DevOps &amp; SaaS</span></li>
+                <li><strong data-i18n="detail.context">Contexte</strong> <span data-i18n="detail.academicProject">Projet académique</span></li>
+                <li><strong data-i18n="beforeitgoes.info.roleLabel">Rôle</strong> <span data-i18n="beforeitgoes.info.role">Développement &amp; infrastructure</span></li>
+                <li><strong data-i18n="beforeitgoes.info.infraLabel">Infrastructure</strong> <span data-i18n="beforeitgoes.info.infra">Cloud privé OpenStack</span></li>
+              </ul>
+              <a class="btn-visit" href="https://github.com/aminesellami10/BeforeItGoes" target="_blank" rel="noopener"><i class="bi bi-github"></i> <span data-i18n="detail.viewGithub">Voir le dépôt GitHub</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-gallery project-gallery-bottom" data-aos="fade-up">
+          <h3 data-i18n="detail.screenshots">Captures du projet</h3>
+          <div class="project-gallery-grid">
+            <figure>
+              <img src="assets/img/projects/beforeitgoes/beforeitgoes-home.png" class="img-fluid" alt="Page d'accueil de BeforeItGoes">
+              <figcaption data-i18n="beforeitgoes.gallery.home">Interface principale de la plateforme BeforeItGoes.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/projects/beforeitgoes/beforeitgoes-dashboard.png" class="img-fluid" alt="Dashboard administrateur BeforeItGoes">
+              <figcaption data-i18n="beforeitgoes.gallery.dashboard">Dashboard administrateur et indicateurs opérationnels.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/projects/beforeitgoes/beforeitgoes-architecture.png" class="img-fluid" alt="Architecture OpenStack et Kubernetes de BeforeItGoes">
+              <figcaption data-i18n="beforeitgoes.gallery.architecture">Architecture OpenStack, Kubernetes, Docker et Ansible.</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/img/projects/beforeitgoes/beforeitgoes-grafana.png" class="img-fluid" alt="Dashboard Grafana de BeforeItGoes">
+              <figcaption data-i18n="beforeitgoes.gallery.grafana">Monitoring avec Grafana et Prometheus.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+    <div class="container">
+      <h3 class="sitename">Mohamed Said Boubaker</h3>
+      <p>Cloud Computing | DevOps | Kubernetes</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/Sa3id-Boubaker" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://linkedin.com/in/mohamed-said-boubaker-847859229/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/translations.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
