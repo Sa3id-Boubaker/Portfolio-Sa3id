@@ -1075,13 +1075,15 @@ body.dark-mode .skills-cloud .skill-bubble .devicon-express-original {
 }
 
 .portfolio .portfolio-marquee.is-filtered {
-  display: flex;
-  justify-content: center;
+  overflow: visible;
 }
 
 .portfolio .portfolio-marquee.is-filtered .portfolio-scroll-row {
   animation: none;
   transform: none;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @keyframes portfolio-marquee-scroll {
