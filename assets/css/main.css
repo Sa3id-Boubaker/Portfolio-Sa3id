@@ -1644,6 +1644,17 @@ body.dark-mode .leavemetry-logo-mark {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
+.contact .contact-form-intro {
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+  margin-bottom: 20px;
+}
+
+.contact .contact-form-note {
+  margin: 15px 0 0;
+  font-size: 13px;
+  color: color-mix(in srgb, var(--default-color), transparent 35%);
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
